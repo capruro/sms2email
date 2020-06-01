@@ -1,4 +1,4 @@
-### Personal smstools configuration setup
+# Personal smstools configuration setup
 Configuration for:
 
 usb_modeswitch  used to switch the 3G usb dongle (ZTE Vodafone in my case) from storage mode to modem mode
@@ -6,16 +6,16 @@ smstools        used for receive sms and forward it to mail
 postfix         MTA used to forward email using a 3rd mail account
 
 
-## Installation
+# Installation
 
-# Postfix setup
+## Postfix setup
 
 I followed this guide to Install and Configure Postfix as SMTP Server on Ubuntu
 https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-ubuntu-18-04/
 
 
 
-# usb_modeswitch
+## usb_modeswitch
 
 `apt install -y usb_modeswitch`
 
@@ -34,7 +34,9 @@ To switch put the file zte_vodafone in the config folder and run as root:
 
 once usb is in the correct state you can start smstools
 
-# smstools
+Known issue: usb_modeswitch doesn't work after reboot so i applied some work around
+
+## smstools
 
 `apt install -y smstools`
 

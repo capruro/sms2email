@@ -14,9 +14,9 @@ if [ "$1" == "RECEIVED" ]; then
         FROM=`grep "From:" $2`
         sms=`tail -n +14 $2`
         SUBJECT="New SMS received $FROM"
-        message="To: $EMAIL
-From: $SENDER
-${sms}"
-        echo -n "$message" | $MAIL -s "$SUBJECT" "$EMAIL"
+#        message="To: $EMAIL
+#From: $SENDER
+#${sms}"
+        echo -n "${sms}" | $MAIL -s "$SUBJECT" "$EMAIL"
    fi
 fi
