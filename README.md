@@ -19,11 +19,13 @@ https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-ubuntu-18-04/ <br /
 
 `apt install -y usb_modeswitch` <br />
 <br />
-`root@ubuntu:~# lsusb <br />
-Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub <br />
-Bus 001 Device 004: ID 19d2:0063 ZTE WCDMA Technologies MSM K3565-Z HSDPA <br />
-Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub <br />
-Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub` <br />
+```
+root@ubuntu:~# lsusb
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 004: ID 19d2:0063 ZTE WCDMA Technologies MSM K3565-Z HSDPA
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+```
  <br />
 19d2:2000 Storage mode <br />
  <br />
