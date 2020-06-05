@@ -1,4 +1,5 @@
-# Personal smstools configuration setup
+# Forward SMS to email using a 3G USB Dongle
+
 Configuration for:<br />
 <br />
 usb_modeswitch  used to switch the 3G usb dongle (ZTE Vodafone in my case) from storage mode to modem mode<br />
