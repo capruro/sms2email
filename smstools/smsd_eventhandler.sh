@@ -1,9 +1,8 @@
 #!/bin/bash
 
-EMAIL="marcello_f@icloud.com"
+EMAIL="myphoneemail@gmail.com"
+SENDER="myalertemail@gmail.com"
 MAIL="/bin/mail"
-SENDER="alert.holonet@gmail.com"
-
 
 echo
 clear
@@ -14,9 +13,6 @@ if [ "$1" == "RECEIVED" ]; then
         FROM=`grep "From:" $2`
         sms=`tail -n +14 $2`
         SUBJECT="New SMS received $FROM"
-#        message="To: $EMAIL
-#From: $SENDER
-#${sms}"
         echo -n "${sms}" | $MAIL -s "$SUBJECT" "$EMAIL"
    fi
 fi
