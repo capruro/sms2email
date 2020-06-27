@@ -11,8 +11,8 @@ postfix         MTA used to forward email using a 3rd mail account<br />
 
 ## Postfix setup
 
-I followed this guide to Install and Configure Postfix as SMTP Server on Ubuntu <br />
-https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-ubuntu-18-04/ <br />
+SMTP Server should be configured to receive notification via mail. You can follow this guide to set up a Gmail account with postfix: <br />
+https://github.com/capruro/sms2email/wiki/Postfix-setup <br />
 
 
 
